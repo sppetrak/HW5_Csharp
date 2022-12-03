@@ -3,41 +3,39 @@
 //[3, 7, 23, 12] -> 19
 //[-4, -6, 89, 6] -> 0
 
-int[] numbers = new int[10];
+int[] array = new int[10];
 
-FillArrayRandomNumbers(numbers);
+FillArrayRandomNumbers(array);
 Console.WriteLine("Масcив из 10 чисел: ");
-PrintArray(numbers);
+PrintArray(array);
 
 int sum = 0;
 
-for (int a = 0; a < numbers.Length; a += 2)
-    sum = sum + numbers[a];
+for (int a = 0; a < array.Length; a += 2)
+    sum = sum + array[a];
 
 Console.WriteLine($"Cумма элементов на нечётных индексах = {sum}");
 
-/* void FillArrayRandomNumbers(int[] numbers)
-{
-    for (int i = 0; i < numbers.Length; i++)
-    {
-        numbers[i] = new Random().Next(-10, 10);
-    }
-} */
+//  void FillArrayRandomNumbers(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = new Random().Next(-10, 10);
+//     }
+// } 
 
-void FillArrayRandomNumbers(int[] numbers)
+void FillArrayRandomNumbers(int[] array)
 {
-    for (int i = 0; i < numbers.Length; i++)
+    for (int i = 0; i < array.Length; i++)
     {
-        numbers[i] = new Random().Next(0, 100);
+        array[i] = new Random().Next(0, 100);
     }
 }
-void PrintArray(int[] numbers)
+void PrintArray(int[] array)
 {
-    Console.Write("[ ");
-    for (int i = 0; i < numbers.Length; i++)
+    for (int i = 0; i < array.Length; i++)
     {
-        Console.Write(numbers[i] + " ");
+        Console.Write(array[i] + " ");
     }
-    Console.Write("]");
     Console.WriteLine();
 }
