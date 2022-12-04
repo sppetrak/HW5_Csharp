@@ -4,7 +4,7 @@
 
 int[] array = new int[10];
 
-FillArrayRandomNumbers(array);
+FillArrayRandom(array);
 Console.WriteLine("Массив трехзначных чисел");
 PrintArray(array);
 
@@ -16,7 +16,7 @@ for (int a = 0; a < array.Length; a++)
 
 Console.WriteLine($"количество четных чисел: {count}");
 
-void FillArrayRandomNumbers(int[] array)
+void FillArrayRandom(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {

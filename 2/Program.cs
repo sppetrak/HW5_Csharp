@@ -5,7 +5,7 @@
 
 int[] array = new int[10];
 
-FillArrayRandomNumbers(array);
+FillArrayRandom(array);
 Console.WriteLine("Масcив из 10 чисел: ");
 PrintArray(array);
 
@@ -16,7 +16,7 @@ for (int a = 0; a < array.Length; a += 2)
 
 Console.WriteLine($"Cумма элементов на нечётных индексах = {sum}");
 
-//  void FillArrayRandomNumbers(int[] array)
+//  void FillArrayRandom(int[] array)
 // {
 //     for (int i = 0; i < array.Length; i++)
 //     {
@@ -24,7 +24,7 @@ Console.WriteLine($"Cумма элементов на нечётных инде�
 //     }
 // } 
 
-void FillArrayRandomNumbers(int[] array)
+void FillArrayRandom(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
