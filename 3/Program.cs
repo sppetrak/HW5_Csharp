@@ -7,7 +7,7 @@ Console.WriteLine("Введите размер массива ");
 int size = Convert.ToInt32(Console.ReadLine());
 int[] array = new int[size];
 FillArray(array);
-int[] array2 =new int[size];
+int[] array2 =new int[size/2];
 Console.WriteLine(" ");
 PrintArray(array);
 MultiplyPairs(array);
