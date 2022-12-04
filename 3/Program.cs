@@ -42,8 +42,8 @@ void MultiplyPairs(int[] аrray)
 
 void PrintArray2(int[] array2)
 {
-    for(int i = 0; i < array2.Length; i++)
+    for(int i = 0; i < array2.Length/2; i++)
     {
-        Console.Write($"{array2[i]/2 + " "}");
+        Console.Write($"{array2[i] + " "}");
     }
 }
